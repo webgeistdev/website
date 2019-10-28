@@ -1,0 +1,15 @@
+<h1 class="outside-title">All learnings about "{{ include.category }}"</h1>
+{{ site }}
+<div class="posts">
+  {% for cat in site.categories %} {% capture category_name %}{{
+    cat | first
+  }}{% endcapture %} {% if category_name == include.category %} {% for post in
+  site.categories[category_name] %} {% if post.lang %}
+  <div class="post" lang="{{ post.lang }}">
+    {% else %}
+    <div class="post">
+      {% endif %} {% include knowledge_post.html post=post %}
+    </div>
+    {% endfor %} {% endif %} {% endfor %}
+  </div>
+</div>

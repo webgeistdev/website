@@ -1,0 +1,34 @@
+<h1 class="post__title">
+  <a href="{{ post.url }}">
+    {{ include.post.title }}
+  </a>
+</h1>
+<div class="post__content">
+  {{ include.post.content }}
+</div>
+
+<div class="post-footer-container">
+  <ul class="post-footer post-footer--left">
+    <li>
+      <a
+        target="blank"
+        href="https://twitter.com/intent/tweet?text={% if include.post.share_text %}{{
+          include.post.share_text | url_encode
+        }}{% endif %}{% unless include.post.share_text %}{{
+          site.default_share_text | url_encode
+        }}{% endunless %}&url={{ include.post.url | prepend: site.url }}"
+      >
+        <i class="icon-twitter-dark icon--small"></i>
+        Share this learning
+      </a>
+    </li>
+  </ul>
+  <ul class="post-footer post-footer--right">
+    <li class="post-footer__item">
+      {% include categories.html categories=include.post.categories %}
+    </li>
+    <li class="post-footer__item">
+      <span class="post-date">{{ include.post.date | date_to_string }}</span>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,4 @@
+{% assign categories = include.categories | sort %}
+{% for category in categories %}
+  <a href="/{{category}}">#{{category}}</a>
+{% endfor %}

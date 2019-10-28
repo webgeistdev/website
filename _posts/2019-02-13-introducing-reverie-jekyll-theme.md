@@ -19,7 +19,7 @@ This is a plug-and-play Jekyll theme which you can use on GitHub Pages without e
 - All the SEO goodies comes in-built
 - Markdown blogging
 - Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
+  - [Dracula syntax theme](https://draculatheme.com/) included
 - Disqus commenting
 - Google Analytics integration
 - Fuzzy search across blog posts
@@ -27,10 +27,6 @@ This is a plug-and-play Jekyll theme which you can use on GitHub Pages without e
 - Categorize posts out-of-the box
 - RSS Feed
 - In-built sitemap
-
-<div style="text-align: center;">
- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6KJY&placement=wwwamitmerchantcom" id="_carbonads_js"></script>
-</div>
 
 ## Using Reverie on GitHub Pages
 
@@ -83,5 +79,3 @@ The generated sitemap of your blog can be found at <https://yourgithubusername.g
 ## License
 
 MIT
-
-
