@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dmenu is a great way to optimize cli scripting"
+title: "Dmenu is a great way to optimize CLI scripting"
 category: linux
 ---
 
