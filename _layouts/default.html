@@ -37,9 +37,7 @@
       <div class="wrapper-masthead">
         <div class="container">
           <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"
-              ><img src="{{ site.baseurl }}{{ site.avatar }}"
-            /></a>
+            <canvas class="site-avatar" id="jsgeist"></canvas>
 
             <div class="site-info">
               <h1 class="site-name">
@@ -68,6 +66,9 @@
       </div>
     </div>
 
-    {% include analytics.html %}
+    <script
+      src="{{ site.baseurl }}/assets/geist.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>

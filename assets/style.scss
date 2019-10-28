@@ -522,6 +522,10 @@ Modules - reusable parts of our design
     color: #fff;
     opacity: 0.8;
   }
+
+  .search-subline > & {
+    margin-left: 0.35rem;
+  }
 }
 
 .pagination a,
