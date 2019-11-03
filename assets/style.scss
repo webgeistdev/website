@@ -45,6 +45,7 @@ h3,
 h4,
 h5,
 h6 {
+  clear: both;
   color: $darkerGray;
   font-weight: bold;
 
@@ -618,3 +619,18 @@ Modules - reusable parts of our design
 // @import "highlights";
 @import "monokai";
 @import "svg-icons";
+
+img[src*="#thumbnail"] {
+  float: left;
+  margin: 0 0.5rem 0.5rem 0;
+  max-height: 100px;
+  max-width: 150px;
+}
+
+.js-only {
+  display: none;
+}
+
+body.js-active .js-only {
+  display: initial;
+}

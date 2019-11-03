@@ -1,3 +1,5 @@
+window.document.body.className += " js-active";
+
 let playground = [];
 
 function createPlayground() {
