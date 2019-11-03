@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to use the original Webster dictionary under linux"
+title: "How to use the original Webster dictionary on Linux"
 category: linux
 ---
 

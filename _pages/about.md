@@ -8,7 +8,7 @@ My Name is Georg Tavonius. I am a Freelance Software Developer in Hamburg, Germa
 
 ### What is this all about?
 
-Well, it is my professional page. I just [blog](/) once in a while or put up some notes on the [knowledge base section](/kb) of things that might be also interesting for other people to know (including my future self).
+Here, I put up some notes on the [knowledge base section](/kb) of things that might be also interesting for other people to know (including my future self) or I [blog](/) once in a (long) while.
 
 ### You want to hire me, need help with something or just want to talk?
 
