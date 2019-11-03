@@ -11,6 +11,8 @@ Once in a while you feel you need something new. So here it is. Not spectacular,
 I just migrated the content over from my old domain. So I have something to start with. It is not finished,
 since my projects don't have a place here yet. But you can see most of them on my [GitHub account][github].
 
+<!--more-->
+
 ## What will you see here?
 
 Right now, you can read this blog post, and an old one I had on my old blog. The most of the interesting stuff

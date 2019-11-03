@@ -9,6 +9,8 @@ This is a guide to deploy a node application using the well known [Capistrano][c
 This guide uses ruby to deploy your node.js application. So I assume that you have both [ruby][ruby] and [bundler][bundler] (a package manager similar
 to [npm][npm]) installed. I also provide some feedback at the end, why I used ruby and not JavaScript for deployment.
 
+<!--more-->
+
 ## Deploying the app
 
 ### Preparation

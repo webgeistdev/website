@@ -11,6 +11,8 @@ author: Georg Tavonius
 # Short bio or description (displayed in the header)
 description: Welcome traveler
 
+excerpt_separator: <!--more-->
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/reverie.png
 
@@ -20,7 +22,6 @@ collections:
     sort_by: category
   posts:
     output: true
-
 #
 # Flags below are optional
 #
