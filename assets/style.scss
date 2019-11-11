@@ -14,18 +14,16 @@
 /* BASE RULES */
 /**************/
 
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-
 html {
   font-size: 100%;
   height: 100%;
 }
 
 body {
-  background: #fff;
+  background: #19344c;
   font-family: "Museo Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #404040;
+  color: #fff;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -46,7 +44,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  color: $darkerGray;
+  color: $lightGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -89,7 +87,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #222;
 }
 
 p {
@@ -148,18 +145,31 @@ table tr td :last-child {
 }
 
 #search-input {
-  width: 80%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  color: #fff;
   font-size: 18px;
-  background-color: #fff3ff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-results {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .search-result {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 1.5rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
   h1 {
     font-size: 1.5rem;
   }
@@ -170,16 +180,16 @@ table tr td :last-child {
 
 .share-box {
   font-weight: bold;
-  color: #222;
 }
 
 a {
-  color: $blue;
+  color: $link-color;
   text-decoration: none;
   cursor: pointer;
+
   &:hover,
   &:active {
-    color: $blue;
+    color: $link-color-hover;
   }
 }
 
@@ -236,7 +246,7 @@ p > img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $mediumLightGray;
 }
 
 // Specify the color of the selection
@@ -271,7 +281,7 @@ p > img {
 
 .wrapper-masthead {
   margin-bottom: 25px;
-  border-bottom: 4px dashed $mediumLightGray;
+  border-bottom: 4px dashed $border-color;
 }
 
 .masthead {
@@ -311,7 +321,6 @@ p > img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -321,7 +330,7 @@ p > img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $mediumLightGray;
   font-size: 16px;
 
   @include mobile {
@@ -344,7 +353,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $lightGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -404,7 +413,7 @@ nav {
 }
 
 .post-footer {
-  border-top: 1px solid $lightGray;
+  border-top: 1px solid $border-color;
   margin-top: 1.8rem;
 }
 
@@ -423,7 +432,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 89px;
-  background-color: $lightGray;
+  background-color: $footer-color;
 }
 
 footer {
@@ -432,7 +441,7 @@ footer {
 }
 
 body:after {
-    background: linear-gradient(
+  background: linear-gradient(
     to right,
     #ffffff 0,
     #2196f3 33%,
@@ -562,8 +571,11 @@ Modules - reusable parts of our design
 
   > li {
     padding: 0.25rem 0;
-    border-bottom: 1px solid $lightGray;
-    border-top: 1px solid $lightGray;
+    border-top: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: 1px solid $border-color;
+    }
   }
 }
 
