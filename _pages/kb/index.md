@@ -12,6 +12,7 @@ These are bits and pieces of small and big learnings, recipes how to do things o
 
 <div>
   {% for knowledge in categories %}
+    <a id="{{ knowledge.name | slugize }}"></a>
     <h4 class="kb-category">{{ knowledge.name }}</h4>
     <ul class="kb-items">
       {% assign postsSorted = knowledge.items | sort: "title" %}

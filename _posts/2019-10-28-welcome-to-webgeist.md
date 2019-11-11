@@ -6,7 +6,7 @@ categories: Homepage
 
 It is time for something new …
 
-Once in a while you feel you need something new. So here it is. Not spectacular, but well. Something.
+Once in a while you feel you need something new. So here it is.
 
 I just migrated the content over from my old domain. So I have something to start with. It is not finished,
 since my projects don't have a place here yet. But you can see most of them on my [GitHub account][github].

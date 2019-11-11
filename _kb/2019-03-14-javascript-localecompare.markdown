@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "You can and should use localeCompare to sort strings alphabetically."
-category: javasscript
+category: JavaScript
 ---
 
 Imagine you want to sort some German strings alphabetically. (Take this for example:)

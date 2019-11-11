@@ -12,7 +12,9 @@ layout: default
       categories %}
       <a
         class="post-tag"
-        href="{{ site.baseurl }}/categories/#{{ category | slugize }}"
+        href="{{ site.baseurl }}/{% if page.collection == 'kb' %}kb/#{{
+          category | slugize
+        }}{% else %}categories/#{{ category | slugize }}{% endif %}"
       >
         {{ category }}
       </a>
