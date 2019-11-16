@@ -27,7 +27,9 @@ body {
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
-  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -184,8 +186,17 @@ table tr td :last-child {
 
 a {
   color: $link-color;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
+
+  .entry & {
+    text-decoration: underline;
+  }
+  .entry h3 &,
+  .entry h4 &,
+  .kb-items & {
+    text-decoration: none;
+  }
 
   &:hover,
   &:active {
@@ -417,26 +428,19 @@ nav {
   margin-top: 1.8rem;
 }
 
-.wrapper-container {
-  min-height: 100%;
-  position: relative;
-}
-
 .wrapper-main {
-  padding-bottom: 134px;
+  padding-bottom: 3rem;
+  flex: 1;
 }
 
 .wrapper-footer {
   border-top: 3px dashed $mediumLightGray;
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 89px;
   background-color: $footer-color;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 3rem 0;
   text-align: center;
 }
 

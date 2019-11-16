@@ -3,9 +3,7 @@
   <head>
     <title>
       {% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{
-        site.name
-      }}
-      – {{ site.description }}
+      site.name }} – {{ site.description }}
     </title>
     {% seo %} {% include meta.html %}
 
@@ -33,36 +31,35 @@
 
   <body>
     <div id="bar"></div>
-    <div class="wrapper-container">
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
-            <canvas class="site-avatar" id="jsgeist"></canvas>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <canvas class="site-avatar" id="jsgeist"></canvas>
 
-            <div class="site-info">
-              <h1 class="site-name">
-                <a href="{{ site.baseurl }}/">{{ site.name }}</a>
-              </h1>
-              <p class="site-description">{{ site.description }}</p>
-            </div>
+          <div class="site-info">
+            <h1 class="site-name">
+              <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+            </h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
 
-            {% include main_nav.html %}
-          </header>
-        </div>
+          {% include main_nav.html %}
+        </header>
       </div>
+    </div>
 
-      <div class="wrapper-main">
-        <div id="main" role="main" class="container">
-          {{ content }}
-        </div>
+    <div class="wrapper-main">
+      <div id="main" role="main" class="container">
+        {{ content }}
       </div>
+    </div>
 
-      <div class="wrapper-footer">
-        <div class="container">
-          <footer class="footer">
-            {% include svg-icons.html %}
-          </footer>
-        </div>
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          Made with ❤ by Georg Tavonius. Using
+          <a href="https://jekyllrb.com/">Jekyll</a>.
+        </footer>
       </div>
     </div>
 
