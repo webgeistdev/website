@@ -27,6 +27,12 @@ It is not only a town that consists of Rubberduckies, but also a learning opport
 ![Sonic Pi Logo](/images/roll/sonicpi.png#thumbnail)
 Why not make (electronic) music using life ruby programming and teach people about programming and music on the way? That is what Sonic Pi stands for and it is fun too.
 
+# Startups
+
+### [Ready to share your startup with the world?](https://sizle.io/how-to-maximise-traffic-to-a-bootstrapped-product-hunt-launch/)
+
+A list of resources where to share and propagate your startup idea. Might be useful for somebody.
+
 # Blog
 
 ## System
