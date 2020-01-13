@@ -34,3 +34,11 @@ Why not make (electronic) music using life ruby programming and teach people abo
 ### [Leverage Points: Places to Intervene in a System](http://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
 
 A very interesting article about points of interest in a system. It also sorts them in order of effectiveness and gives great examples what a system and its leverage points are. The author concludes with saying that mastery might not be "pushing leverage points" instead it might just be "strategically [...] letting go".
+
+# Great Articles
+
+## Artificial Intelligence / Machine Learning
+
+### [Why Are We Using Black Box Models in AI When We Don’t Need To? A Lesson From An Explainable AI Competition](https://hdsr.mitpress.mit.edu/pub/f9kuryi8)
+
+Nice read, that questions the use of creating Neural Networks – which you cannot reason about – when there could easily be written algorithms that you actually can reason about.
