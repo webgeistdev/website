@@ -58,23 +58,23 @@ function Geist(canvas, x, y) {
   this.movingX = 0;
   this.movingY = 0;
 
-  this.moveRight = function(val = true) {
+  this.moveRight = function (val = true) {
     this.movingX = val ? 1 : 0;
   };
 
-  this.moveLeft = function(val = true) {
+  this.moveLeft = function (val = true) {
     this.movingX = val ? -1 : 0;
   };
 
-  this.moveUp = function(val = true) {
+  this.moveUp = function (val = true) {
     this.movingY = val ? -1 : 0;
   };
 
-  this.moveDown = function(val = true) {
+  this.moveDown = function (val = true) {
     this.movingY = val ? 1 : 0;
   };
 
-  this.draw = function(delta) {
+  this.draw = function (delta) {
     const stepSizeX = ((MOVE_SPEED * delta) / 1000) * this.movingX;
     const eyeStepSizeX = ((geistWidth * 0.5 * delta) / 1000) * this.movingX;
 
@@ -170,7 +170,7 @@ function isHittingItem(rect1, rect2) {
   );
 }
 
-window.addEventListener("DOMContentLoaded", function(event) {
+window.addEventListener("DOMContentLoaded", function (event) {
   const geist = new Geist(document.getElementById("jsgeist"), 0, 0);
 
   let lastTime = Date.now();
@@ -182,7 +182,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
   }
   drawLoop();
 
-  document.body.addEventListener("keydown", function(event) {
+  document.body.addEventListener("keydown", function (event) {
     if (event.keyCode === 37) {
       geist.moveLeft();
     } else if (event.keyCode === 38) {
@@ -197,7 +197,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
     event.preventDefault();
   });
 
-  document.body.addEventListener("keyup", function(event) {
+  document.body.addEventListener("keyup", function (event) {
     if (event.keyCode === 37) {
       geist.moveLeft(false);
     } else if (event.keyCode === 38) {
@@ -211,4 +211,11 @@ window.addEventListener("DOMContentLoaded", function(event) {
     }
     event.preventDefault();
   });
+
+  document.querySelectorAll('.js-email').forEach(function (element) {
+    element.innerHTML += '@webgeist.dev'
+    element.href = 'mailto:' + element.innerHTML
+  })
 });
+
+
