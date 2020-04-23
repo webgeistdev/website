@@ -4,7 +4,7 @@ title: Stuff on the internet that is great
 permalink: /roll/
 ---
 
-Here are some links to tools, and stuff, that I really think, are worth to be pursued to be known about.
+Here are some links to tools of cool things and projects that I think is great.
 
 # Programming
 
