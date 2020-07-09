@@ -100,8 +100,8 @@ function Geist(canvas, x, y) {
     canvas.style.transform = `translate3D(${this.x}px, ${this.y}px, 0)`;
     const offset = 3;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.strokeStyle = "rgba(100, 100, 100, 0.88)";
-    ctx.fillStyle = "rgba(250, 250, 250, 0.2)";
+    ctx.strokeStyle = "rgba(200, 200, 200, 0.88)";
+    ctx.fillStyle = "rgba(150, 150, 150, 0.2)";
     ctx.beginPath();
     const dragX = accumulateSteps(lastXSteps, DRAG);
     const dragY = accumulateSteps(lastYSteps, DRAG);

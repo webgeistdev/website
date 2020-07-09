@@ -14,15 +14,17 @@ $mediumLightGray: #ccc;
 $lightGray: #eee;
 $white: #fff;
 
-$border-color: rgba(255, 255, 255, 0.33);
-$footer-color: rgba(255, 255, 255, 0.12);
-$link-color: $lightGray;
+$backgroundColor: #fcfcfc;
+
+$border-color: rgba(60, 60, 60, 0.33);
+$footer-color: rgba(60, 60, 60, 0.12);
+$link-color: $darkerGray;
 $link-color-hover: #55a0de;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$sansSerif: Lato, "Museo Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {

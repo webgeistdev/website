@@ -20,10 +20,9 @@ html {
 }
 
 body {
-  background: #19344c;
-  font-family: "Museo Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #fff;
+  background: $backgroundColor;
+  font-family: $sansSerif;
+  color: $darkGray;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -46,7 +45,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  color: $lightGray;
+  color: $darkGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -154,7 +153,7 @@ table tr td :last-child {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  color: #fff;
+  color: $darkGray;
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -292,7 +291,6 @@ p > img {
 
 .wrapper-masthead {
   margin-bottom: 25px;
-  border-bottom: 4px dashed $border-color;
 }
 
 .masthead {
@@ -333,7 +331,7 @@ p > img {
 .site-name {
   margin: 0;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $sansSerif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -352,7 +350,7 @@ p > img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $sansSerif;
   font-size: 18px;
 
   @include mobile {
@@ -364,7 +362,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $lightGray;
+    color: $gray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -433,9 +431,7 @@ nav {
 }
 
 .wrapper-footer {
-  border-top: 3px dashed $mediumLightGray;
   width: 100%;
-  background-color: $footer-color;
 }
 
 footer {
@@ -657,4 +653,31 @@ img[src*="#thumbnail"] {
 
 body.js-active .js-only {
   display: initial;
+}
+
+.speech {
+  display: inline-block;
+  border: 1px solid $gray;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  margin-top: 0.25rem;
+
+  &::before {
+    content: "";
+    border: 10px solid $backgroundColor;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    border-color: transparent transparent $gray $gray;
+  }
+
+  &::after {
+    content: "";
+    border: 10px solid $gray;
+    position: absolute;
+    top: -19px;
+    left: 31px;
+    border-width: 10px 8px 10px 10px;
+    border-color: transparent transparent $backgroundColor $backgroundColor;
+  }
 }
