@@ -35,6 +35,10 @@ A list of resources where to share and propagate your startup idea. Might be use
 
 # Blog
 
+### [Geekring](https://geekring.net/)
+
+Through the commercializing of the search engines it is harder to find new interesting blogs that do not buy search results or do not sell stuff that you might find on google and there like. But luckily there are some projects out there, that allow small blog owners to promote their blogs to small audiences that do not know to search for your blog and still might find it useful.
+
 ## System
 
 ### [Leverage Points: Places to Intervene in a System](http://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
