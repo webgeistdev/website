@@ -1,0 +1,32 @@
+---
+layout: post
+title: "How to install and start with Haskell"
+category: haskell
+---
+
+Since it wasn't quite obvious from the [Haskell Documentation](https://www.haskell.org/) I decided to write it down how to install and start with programming in Haskell:
+
+Install via [Haskell Platform](https://www.haskell.org/platform/), there is a description how-to install this platform for every system. On my Linux system, it installed about 750 MB of stuff. But then I could simply start up the REPL using:
+
+```bash
+$ ghci
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> putStrLn "Hello, World!"
+"Hello, World!"
+```
+
+or putting this into a `hello.hs` file:
+
+```haskell
+main :: IO ()
+main = putStrLn "Hello, World!"
+```
+
+Then I could compile and run it via
+
+```sh
+$ ghc hello.js
+$ ./hello
+```
+
+Hope it helps to start the Haskell journey.

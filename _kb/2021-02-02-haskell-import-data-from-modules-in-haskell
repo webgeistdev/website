@@ -1,0 +1,41 @@
+---
+layout: post
+title: "How to import data from modules in Haskell"
+category: haskell
+---
+
+It took me a while to figure this out – I probably just overlooked it all the time – but I finally understood how import for data works.
+
+Importing stuff in Haskell is easy and mostly straigtforward.
+
+```haskell
+import Mod -- imports all from a module
+import Mox (foo, bar) -- imports foor and bar from that module
+import qualified Mod -- imports all with Mod as mandatory namespace
+import Mod as Foo -- imports all with Foo as optional(!) namespace (you can reach everything in Mod also without the namespace)
+```
+
+But if you have the following definition in `Mod`, how can you export/import the data given (`Red`, `Green` & `Blue`)?
+
+```haskell
+module Mod where
+
+data Colors = Red | Green | Blue
+```
+
+Just use this:
+
+```haskell
+-- in Mod itself
+module Mod (Color(..)) where
+
+data Colors = Red | Green | Blue
+```
+
+```haskell
+import Mod (Color(..))
+
+x = Color.Red
+```
+
+If you know it, it becomes easy, but somehow it was not apparent when checking out the [import wiki page](https://wiki.haskell.org/Import).
