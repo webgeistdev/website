@@ -93,6 +93,13 @@ plugins:
 include:
   - "_pages"
 
+# Jekyll Feed related
+feed:
+  collections:
+    posts:
+    kb:
+      path: "/feed/til.xml"
+
 paginate: 6
 paginate_path: /page:num/
 
