@@ -339,7 +339,7 @@ p > img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $mediumLightGray;
+  color: #6a6d77;
   font-size: 16px;
 
   @include mobile {
@@ -507,13 +507,13 @@ body:after {
 
 .author_title {
   text-align: center;
-  color: #939aa1;
+  color: #6a6d77;
   letter-spacing: 2px;
 }
 
 .post_date {
   text-align: center;
-  color: #939aa1;
+  color: #6a6d77;
 }
 
 .legal-info {

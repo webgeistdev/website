@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       {% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{
@@ -25,7 +25,6 @@
       href="{{ site.baseurl }}/feed/til.xml"
     />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-
   </head>
 
   <body>
@@ -48,9 +47,7 @@
     </div>
 
     <div class="wrapper-main">
-      <div id="main" role="main" class="container">
-        {{ content }}
-      </div>
+      <div id="main" role="main" class="container">{{ content }}</div>
     </div>
 
     <div class="wrapper-footer">
